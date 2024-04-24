@@ -1,4 +1,4 @@
-package com.company.test;
+package com.company.test.Figure;
 
 public class Circle extends Shape {
 

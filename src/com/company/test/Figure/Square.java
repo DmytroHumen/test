@@ -1,6 +1,6 @@
-package com.company.test;
+package com.company.test.Figure;
 
-import com.company.test.Shape;
+import com.company.test.Figure.Shape;
 
 public class Square extends Shape {
 

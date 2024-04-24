@@ -1,16 +1,15 @@
-package com.company.test;
+package com.company.test.Figure;
 
 public abstract class Shape {
 
         private String color;
+        public abstract double area();
+
+        public abstract void draw();
 
         public Shape(String color) {
                 this.color = color;
         }
-
-        public abstract void draw();
-
-        public abstract double area();
 
         public String getColor() {
                 return color;

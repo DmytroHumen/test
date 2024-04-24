@@ -1,17 +1,17 @@
-package com.company.test;
+package com.company.test.Figure;
 
-import com.company.test.Shape;
+import com.company.test.Figure.Shape;
 
 public class Triangle extends Shape {
 
-    private double side1;
-    private double side2;
+    private double firstCatet;
+    private double secondCatet;
     private double hypotenuse;
 
     public Triangle(double side1, double side2, String color) {
         super(color);
-        this.side1 = side1;
-        this.side2 = side2;
+        this.firstCatet = side1;
+        this.secondCatet = side2;
         this.hypotenuse = Math.sqrt(side1 * side1 + side2 * side2);
     }
 
@@ -22,7 +22,7 @@ public class Triangle extends Shape {
 
     @Override
     public double area() {
-        return 0.5 * side1 * side2;
+        return 0.5 * firstCatet * secondCatet;
     }
 
     @Override

@@ -1,18 +1,18 @@
-package com.company.test;
+package com.company.test.Figure;
 
-import com.company.test.Shape;
+import com.company.test.Figure.Shape;
 
 public class Trapeze extends Shape {
 
     private double sideUp;
     private double sideDown;
-    private double h;
+    private double height;
 
-    public Trapeze(double sideUp, double sideDown, double h, String color) {
+    public Trapeze(double sideUp, double sideDown, double height, String color) {
         super(color);
         this.sideUp = sideUp;
         this.sideDown = sideDown;
-        this.h = h;
+        this.height = height;
     }
 
     @Override
@@ -22,13 +22,13 @@ public class Trapeze extends Shape {
 
     @Override
     public double area() {
-        return ((sideUp + sideDown) * h) / 2;
+        return ((sideUp + sideDown) * height) / 2;
     }
 
     @Override
     public String toString() {
         return String.format("Фігура: трапеція, площа: %.2f кв.од., довжина верхньої сторони: %.2f, довжина нижньої сторони: %.2f, висота: %.2f од., колір: %s",
-                area(), sideUp, sideDown, h, getColor());
+                area(), sideUp, sideDown, height, getColor());
     }
 
 }
